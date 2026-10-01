@@ -17,4 +17,14 @@ public class UsuarioServiceImpl implements UsuarioService {
         return usuario_repository.save(usuario);
     }
 
+    @Override
+    public Usuario buscaPorId(Integer idUsuario) {
+        return usuario_repository.findById(idUsuario).orElse(null);
+    }
+
+    @Override
+    public Usuario actualizar(Integer idUsuario, Usuario usuario) {
+        usuario.setIdUsuario(idUsuario);
+        return usuario_repository.save(usuario);
+    }
 }
