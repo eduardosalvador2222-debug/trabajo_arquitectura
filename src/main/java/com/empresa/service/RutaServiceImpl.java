@@ -21,8 +21,6 @@ public class RutaServiceImpl implements RutaService {
     }
     @Override
     public Ruta registrar(Ruta ruta) {
-        // Aquí puedes agregar validaciones previas si lo necesitas, 
-        // y luego guardarlo usando el repositorio de Spring Data JPA
         return rutaRepository.save(ruta);
     }
 }

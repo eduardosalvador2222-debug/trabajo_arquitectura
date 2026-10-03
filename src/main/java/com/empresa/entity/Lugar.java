@@ -1,8 +1,15 @@
 package com.empresa.entity;
 import jakarta.persistence.*;
-import lombok.Data;
 
-@Data
+import lombok.Getter;
+import lombok.Setter;
+import lombok.NoArgsConstructor;
+import lombok.AllArgsConstructor;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 @Table(name = "lugar")
 public class Lugar {
