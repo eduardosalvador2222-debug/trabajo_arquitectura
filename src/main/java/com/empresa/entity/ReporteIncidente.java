@@ -27,7 +27,7 @@ public class ReporteIncidente {
 
     @ManyToOne
     @JoinColumn(name = "id_tipo_incidente")
-    private TipoIncidente incidente;
+    private TipoIncidente tipoIncidente;
 
     @ManyToOne
     @JoinColumn(name = "id_usuario")
