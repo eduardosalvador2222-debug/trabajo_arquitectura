@@ -1,6 +1,5 @@
 package com.empresa.controller;
 
-import java.security.Provider.Service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,15 +30,15 @@ public class ReporteIncidenteController {
         List<ReporteIncidente> reportes = reporteincidenteService.listarTodos();
         return new ResponseEntity<>(reportes, HttpStatus.OK);
     }
-
-    
+ 
+       
     @GetMapping("/activos")
     public ResponseEntity<List<ReporteIncidente>> listarActivos() {
         List<ReporteIncidente> activos = reporteincidenteService.listarActivos();
         return new ResponseEntity<>(activos, HttpStatus.OK);
     }
 
-    
+    // POST
     @PostMapping
     public ResponseEntity<ReporteIncidente> guardar(@RequestBody ReporteIncidente reporte) {
         ReporteIncidente nuevoReporte = reporteincidenteService.guardar(reporte);

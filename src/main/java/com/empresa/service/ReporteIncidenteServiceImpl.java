@@ -32,7 +32,6 @@ public class ReporteIncidenteServiceImpl implements ReporteIncidenteService {
     @Override
     public ReporteIncidente actualizar(Integer id, ReporteIncidente reporteActualizado) {
         return repository.findById(id).map(reporteExistente -> {
-            // Solo actualizamos los campos permitidos
             reporteExistente.setDescripcion(reporteActualizado.getDescripcion());
             reporteExistente.setEstado(reporteActualizado.getEstado());
             reporteExistente.setTipoIncidente(reporteActualizado.getTipoIncidente());
