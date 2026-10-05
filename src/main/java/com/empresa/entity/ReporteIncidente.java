@@ -33,7 +33,7 @@ public class ReporteIncidente {
     @JoinColumn(name = "id_usuario")
     private Usuario usuario;
 
-    @Column(name = "descripción")
+    @Column(name = "descripcion")
     private String descripcion;
 
     @Column(name = "latitud")

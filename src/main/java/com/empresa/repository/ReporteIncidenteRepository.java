@@ -6,10 +6,8 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.empresa.entity.ReporteIncidente;
 
-public interface ReporteIncidenteRepository extends JpaRepository<ReporteIncidente, Integer>{
-	
-     List<ReporteIncidente> findByEstadoOrderByReportadoEnDesc(String estado);
-     
-	 ReporteIncidente actualizar(Integer id, ReporteIncidente reporte);
-	
+public interface ReporteIncidenteRepository
+        extends JpaRepository<ReporteIncidente, Integer> {
+
+    List<ReporteIncidente> findByEstadoOrderByReportadoEnDesc(String estado);
 }

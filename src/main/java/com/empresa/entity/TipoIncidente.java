@@ -24,9 +24,8 @@ public class TipoIncidente {
 	    @Column(name = "id_tipo_incidente")
 	    private Integer idTipoIncidente;
 
-	    @ManyToOne
-	    @JoinColumn(name = "nombre")
-	    private String nombre;
+	  @Column(name = "nombre")
+	  private String nombre;
 
 	
 }
